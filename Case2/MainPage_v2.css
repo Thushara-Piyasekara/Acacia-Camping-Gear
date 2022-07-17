@@ -116,10 +116,11 @@ body {
     float: right;
 }
 
-.shop {
+
+.shoptext {
     float: left;
 }
 
-.shoptext {
+#shopimage{
     float: right;
 }
