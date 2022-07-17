@@ -134,9 +134,7 @@ body {
     float: left;
     width: 50%;
 }
-.quiz{
-    display: flex;
-}
+
 .quiztxt{
     float: left;
     font-size: 20px;
