@@ -119,11 +119,18 @@ body {
     float: right;
 }
 
-
-.shoptext {
-    float: left;
+.shop {
+    position: relative;
 }
 
-#shopimage {
+.shoptext {
     float: right;
+    padding: 3%;
+    width: 25%;
+
+}
+
+.shopimage {
+    float: left;
+    width: 50%;
 }
