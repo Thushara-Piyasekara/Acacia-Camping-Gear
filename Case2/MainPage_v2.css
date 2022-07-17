@@ -134,3 +134,12 @@ body {
     float: left;
     width: 50%;
 }
+.quiz{
+    position: relative;
+}
+.quiztxt{
+    float:left;
+}
+.quizimg{
+    float:right;
+}
