@@ -56,7 +56,7 @@ body {
 .camp2Block {
     float: right;
     font-size: 20px;
-    width: 30%;
+    width: 40%;
     padding: 4%;
 
 }
@@ -124,6 +124,6 @@ body {
     float: left;
 }
 
-#shopimage{
+#shopimage {
     float: right;
 }
