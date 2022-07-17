@@ -1,0 +1,124 @@
+body {
+    background-color: #faf4eb;
+    font-family: sans-serif;
+
+}
+
+* {
+    /* Makes the padding and border included in the height and width of an element*/
+    box-sizing: border-box;
+}
+
+.titleBlock {
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.titleImg {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pageTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    font-family: sans-serif;
+    color: rgb(225, 225, 225);
+    font-size: 70px;
+}
+
+.pageSubtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-family: sans-serif;
+    color: rgb(225, 225, 225);
+    font-size: 25px;
+    text-align: justify;
+}
+
+.camp2 {
+    position: relative;
+    font-family: Arial;
+}
+
+.camp2Block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0, 0.85);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.camp2Block p {
+    font-size: larger;
+}
+
+/* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* The navbar */
+.topNav {
+    float: right;
+    margin-top: 20px;
+}
+
+.topNav a {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #efe2d0;
+    padding: 12px;
+    width: 50px;
+    height: 10px;
+}
+
+.topNav a:hover {
+    background-color: #628563;
+}
+
+.topNav a.active {
+    background-color: #774040;
+    color: #fff;
+}
+
+.tryCampingText {
+    float: left;
+    font-size: 20px;
+    width: 50%;
+}
+
+.tryCampingImage {
+    float: right;
+    width: 50%;
+}
+
+.tryCamping {
+    display: flex;
+}
+
+.camp4 {
+    float: right;
+}
+
+.shop {
+    float: left;
+}
+
+.shoptext {
+    float: right;
+}
