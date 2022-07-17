@@ -145,6 +145,7 @@ body {
 }
 .quizimg{
     float: right;
-    width: 50%;
+    width: 200px;
+    height: 100px;
 }
 
