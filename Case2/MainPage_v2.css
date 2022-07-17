@@ -145,3 +145,7 @@ body {
     float:right;
     width: 40%;
 }
+.quizimg img{
+    width: 150px;
+    height: 125px;
+}
