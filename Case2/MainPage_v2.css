@@ -139,6 +139,7 @@ body {
 }
 .quiztxt{
     float:left;
+    width: 200px;
 }
 .quizimg{
     float:right;
