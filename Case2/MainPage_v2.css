@@ -19,7 +19,7 @@ body {
 /* The navbar */
 .topNav {
 
-    /* The below commented code makes the nav bar fixed. have to do more digging */
+    /* The below commented code makes the nav bar fixed. Doesnt work yet have to do more digging */
     /* position: fixed;
     top: 0;
     left: 0;
@@ -130,9 +130,14 @@ body {
     float: right;
 }
 
-.shop {
-    /* position: relative; */
-}
+/* .shop {
+    position: relative;
+} */
+
+
+/* What does shop style do????/ */
+
+
 
 .shoptext {
     float: right;
