@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid rgb(0, 0, 0)
-}
+} */
 
 .homePage {
     background-color: #f5eee6;
@@ -74,17 +74,6 @@
     font-size: 20px;
 }
 
-.homeTryCamping img {
-    transition: 1s ease;
-}
-
-.homeTryCamping img:hover {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-}
-
 #homeTryCampingTxt {
     font-size: 20px;
     padding-top: 8%;
@@ -98,31 +87,29 @@
     font-size: 20px;
 }
 
-#homeShoptext {
+#homeShopTxt {
     font-size: 20px;
 }
 
-.homeQuiztxt {
-    float: left;
+#homeQuizTxt {
     font-size: 20px;
-    width: 40%;
-    margin: 2%;
-}
-
-#homeWhatIsImg {
-    padding-top: 20px;
+    padding-top: 10%;
 }
 
 .homeImgL {
     float: left;
     width: 55%;
-    padding: 20px;
+    border: solid 1px;
+    border-color: #628563;
+    margin-top: 20px;
 }
 
 .homeImgR {
     float: right;
     width: 55%;
-    padding: 20px;
+    border: solid 1px;
+    border-color: #628563;
+    margin-top: 20px;
 }
 
 .homeTxtR {
