@@ -131,10 +131,18 @@
 
 .homeTxtR {
     float: right;
-    width: 30%;
+    width: 35%;
+    text-align: center;
+    padding-right: 5vh;
 }
 
 .homeTxtL {
     float: left;
-    width: 30%;
+    width: 35%;
+    text-align: center;
+    padding-left: 5vh;
+}
+
+#homeWhatIsText {
+    padding-top: 20vh;
 }
