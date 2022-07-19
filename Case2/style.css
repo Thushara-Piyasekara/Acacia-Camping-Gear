@@ -1,0 +1,134 @@
+* {
+    border: 1px solid rgb(0, 0, 0)
+}
+
+.homePage {
+    background-color: #f5eee6;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.homeContents {
+    margin: 10px;
+}
+
+/* Position the navbar container inside the image */
+.homeContainer {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* The navbar */
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    transition: top 550ms;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.navbar a:hover {
+    background-color: #628563;
+}
+
+.navbar a.active {
+    background-color: #774040;
+    color: #fff;
+}
+
+.homeTitleBlock {
+    white-space: nowrap;
+    background-image: url("Images/hometitle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.homeTitle {
+    font-family: sans-serif;
+    color: #333;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.homeSubtitle {
+    font-family: sans-serif;
+    color: #333;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.homeWhatIsImg {
+    width: 40%;
+    float: left;
+}
+
+.homeWhatIsText {
+    float: right;
+    font-size: 20px;
+    width: 40%;
+    margin: 7%;
+}
+
+
+.homeTryCampingText {
+    float: left;
+    font-size: 20px;
+    width: 40%;
+    margin: 6%;
+}
+
+.homeTryCampingImage {
+    float: right;
+    width: 40%;
+}
+
+
+
+/* .homeTryCamping {
+    display: flex;
+} */
+
+.homeCamp4 {
+    float: right;
+}
+
+
+.homeShoptext {
+    float: right;
+
+    width: 25%;
+    margin: 5%;
+}
+
+.homeShopimage {
+    float: left;
+    width: 60%;
+
+}
+
+.homeQuiztxt {
+    float: left;
+    font-size: 20px;
+    width: 40%;
+    margin: 5%;
+}
+
+.homeQuizImage {
+    float: right;
+    width: 40%;
+}
