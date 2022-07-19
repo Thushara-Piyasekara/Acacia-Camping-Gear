@@ -9,13 +9,16 @@ body {
 }
 
 h1 {
-    /* background-color: black; */
     color: rgb(73, 120, 73);
+}
+
+img{
+    width: 400px;
+    height: 357px;
 }
 
 .rule {
     font-size: 25px;
-    /* background-color: black; */
     color: darkblue;
 }
 
