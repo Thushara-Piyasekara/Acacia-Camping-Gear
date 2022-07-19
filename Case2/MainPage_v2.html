@@ -5,16 +5,28 @@
 
 <head>
     <link rel="stylesheet" href="MainPage_v2.css">
+    <script>
+        window.onscroll = function () { showNavbar() };
+
+        function showNavbar() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("navbar").style.top = "0";
+            }
+            else {
+                document.getElementById("navbar").style.top = "-55px";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <div class="topNav">
-        <a class="active" href="#home">HOME</a>
-        <a href="#products">PRODUCTS</a>
+    <div id="navbar" class="navbar">
+        <a href="#home">HOME</a>
+        <a class="active" href="#products">PRODUCTS</a>
         <a href="#query">QUERY</a>
         <a href="#quiz">QUIZ</a>
         <a href="#sitemap">SITEMAP</a>
-        <a href="#thumbnails">THUMBNAILS</a> <!-- thumbnails or gallery -->
+        <a href="#thumbnails">THUMBNAILS</a>
         <a href="#details">STUDENT DETAILS</a>
     </div>
 

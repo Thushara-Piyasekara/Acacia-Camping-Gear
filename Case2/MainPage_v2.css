@@ -17,42 +17,33 @@ body {
 }
 
 /* The navbar */
-.topNav {
-
-    /* The below commented code makes the nav bar fixed. Doesnt work yet have to do more digging */
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999; */
-
-    float: right;
-    margin-top: 20px;
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    transition: top 550ms;
 }
 
-.topNav a {
+.navbar a {
+    float: left;
+    display: block;
     color: #000;
     text-align: center;
     font-size: 15px;
     text-decoration: none;
-    border-radius: 10px;
-    background: #efe2d0;
-    padding: 12px;
-    width: 50px;
-    height: 10px;
+    font-weight: bold;
+    padding: 14px;
 }
 
-.topNav a:hover {
+.navbar a:hover {
     background-color: #628563;
-    color: #fff;
 }
 
-.topNav a.active {
+.navbar a.active {
     background-color: #774040;
     color: #fff;
 }
-
-
 
 .titleBlock {
     position: relative;
