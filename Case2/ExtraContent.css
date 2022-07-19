@@ -13,13 +13,18 @@ body {
 }
 
 h1 {
-    /* background-color: black; */
     color: rgb(73, 120, 73);
+}
+
+img{
+    align-items: center;
+    width: 500px;
+    height: 357px;
+    
 }
 
 .rule {
     font-size: 25px;
-    /* background-color: black; */
     color: darkblue;
 }
 
