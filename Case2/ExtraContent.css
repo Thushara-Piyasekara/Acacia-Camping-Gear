@@ -20,7 +20,8 @@ img{
     align-items: center;
     width: 500px;
     height: 357px;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rule {
