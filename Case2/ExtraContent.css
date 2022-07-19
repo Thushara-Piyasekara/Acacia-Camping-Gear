@@ -1,10 +1,23 @@
 body{
-    
+    padding: 50px;
+    background-color: rgb(215, 228, 239);
+}
+
+h1 {
+    /* background-color: black; */
+    color: rgb(73, 120, 73);
 }
 .rule {
-
+    font-size: 25px;
+    /* background-color: black; */
+    color: darkblue;
 }
 
 .extrapara {
+    font-size: 20px;
+    
+}
+.extradesc{
+    font-size: 20px;
     
 }
