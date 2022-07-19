@@ -70,40 +70,36 @@
     text-align: center;
 }
 
-.homeWhatIsText {
-    float: right;
+#homeWhatIsTxt {
     font-size: 20px;
-    width: 35%;
-    margin: 2%;
-    margin-top: 6%;
 }
 
-.homeTryCampingText {
-    float: left;
-    font-size: 20px;
-    width: 35%;
-    margin: 3%;
+.homeTryCamping img {
+    transition: 1s ease;
 }
 
-.homeCampingSLText {
-    float: right;
-    font-size: 20px;
-    width: 35%;
-    margin: 3%;
+.homeTryCamping img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
 }
 
-.homeQueryText {
-    float: right;
+#homeTryCampingTxt {
     font-size: 20px;
-    width: 35%;
-    margin: 3%;
+    padding-top: 8%;
 }
 
-.homeShoptext {
-    float: right;
+#homeCampingSLTxt {
+    font-size: 20px;
+}
 
-    width: 25%;
-    margin: 8%;
+#homeQueryTxt {
+    font-size: 20px;
+}
+
+#homeShoptext {
+    font-size: 20px;
 }
 
 .homeQuiztxt {
@@ -134,6 +130,7 @@
     width: 35%;
     text-align: center;
     padding-right: 5vh;
+    padding-top: 20vh;
 }
 
 .homeTxtL {
@@ -141,12 +138,5 @@
     width: 35%;
     text-align: center;
     padding-left: 5vh;
-}
-
-#homeWhatIsTxt {
     padding-top: 20vh;
-}
-
-#homeTryCampingTxt {
-    padding-top: 30vh;
 }
