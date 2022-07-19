@@ -78,11 +78,6 @@
     margin-top: 6%;
 }
 
-.homeWhatIsImg {
-    width: 60%;
-    float: left;
-}
-
 .homeTryCampingText {
     float: left;
     font-size: 20px;
@@ -90,47 +85,56 @@
     margin: 3%;
 }
 
-.homeTryCampingImage {
+.homeCampingSLText {
     float: right;
-    width: 40%;
+    font-size: 20px;
+    width: 35%;
+    margin: 3%;
 }
 
-.homeCamp4 {
+.homeQueryText {
     float: right;
+    font-size: 20px;
+    width: 35%;
+    margin: 3%;
 }
 
 .homeShoptext {
     float: right;
 
     width: 25%;
-    margin: 5%;
-}
-
-.homeShopimage {
-    float: left;
-    width: 60%;
-
+    margin: 8%;
 }
 
 .homeQuiztxt {
     float: left;
     font-size: 20px;
     width: 40%;
-    margin: 5%;
+    margin: 2%;
 }
 
-.homeQuizImage {
-    float: right;
-    width: 40%;
+#homeWhatIsImg {
+    padding-top: 20px;
 }
 
 .homeImgL {
     float: left;
     width: 55%;
+    padding: 20px;
 }
 
 .homeImgR {
     float: right;
     width: 55%;
     padding: 20px;
+}
+
+.homeTxtR {
+    float: right;
+    width: 45%;
+}
+
+.homeTxtL {
+    float: left;
+    width: 45%;
 }
