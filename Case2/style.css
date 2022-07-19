@@ -1,0 +1,153 @@
+* {
+    border: 1px solid rgb(0, 0, 0)
+}
+
+.homePage {
+    background-color: #f5eee6;
+    font-family: sans-serif;
+    margin: 0px;
+
+
+}
+
+/* Position the navbar container inside the image */
+.homeContainer {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* The navbar */
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    transition: top 550ms;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.navbar a:hover {
+    background-color: #628563;
+}
+
+.navbar a.active {
+    background-color: #774040;
+    color: #fff;
+}
+
+.homeTitleBlock {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.homeTitleImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.homeTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: sans-serif;
+    color: rgb(225, 225, 225);
+    font-size: 70px;
+}
+
+.homeSubtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    font-family: sans-serif;
+    color: rgb(225, 225, 225);
+    font-size: 25px;
+    text-align: justify;
+}
+
+.homeCamp2 {
+    font-family: Arial;
+}
+
+.homeCamp2 img {
+    width: 60%;
+}
+
+.homeCamp2Block {
+    float: right;
+    font-size: 20px;
+    width: 40%;
+    padding: 4%;
+
+}
+
+.homeCamp2Block p {
+    font-size: larger;
+}
+
+
+.homeTryCampingText {
+    float: left;
+    font-size: 20px;
+    width: 50%;
+    padding: 4%;
+}
+
+.homeTryCampingImage {
+    float: right;
+    width: 50%;
+}
+
+.homeTryCamping {
+    display: flex;
+}
+
+.homeCamp4 {
+    float: right;
+}
+
+/* .shop {
+    position: relative;
+} */
+
+
+/* What does shop style do????/ */
+
+
+
+.homeShoptext {
+    float: right;
+    padding: 3%;
+    width: 25%;
+
+}
+
+.homeShopimage {
+    float: left;
+    width: 50%;
+}
+
+.homeQuiztxt {
+    float: left;
+    font-size: 20px;
+    width: 50%;
+    padding: 4%;
+}
+
+.homeQuizImage {
+    float: right;
+    width: 50%;
+}
