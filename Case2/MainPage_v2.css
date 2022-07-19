@@ -8,6 +8,7 @@ body {
 * {
     /* Makes the padding and border included in the height and width of an element*/
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 .titleBlock {
@@ -140,4 +141,9 @@ body {
     font-size: 20px;
     width: 50%;
     padding: 4%;
+}
+
+.quizImage {
+    float: right;
+    width: 50%;
 }
