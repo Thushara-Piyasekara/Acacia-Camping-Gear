@@ -9,7 +9,7 @@
         window.onscroll = function () { showNavbar() };
 
         function showNavbar() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            if (document.documentElement.scrollTop > 150) {    //We buried the body inside discord
                 document.getElementById("navbar").style.top = "0";
             }
             else {
@@ -32,7 +32,7 @@
 
     <div class="homeTitleBlock">
         <div class="homeTitle">Marmite Camping Gear
-            <p class="homeSubtitle"> Start Your Adventure Today</p>
+            <p> Start Your Adventure Today</p>
         </div>
     </div>
 
