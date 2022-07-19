@@ -6,8 +6,10 @@
     background-color: #f5eee6;
     font-family: sans-serif;
     margin: 0px;
+}
 
-
+.homeContents {
+    margin: 10px;
 }
 
 /* Position the navbar container inside the image */
@@ -48,7 +50,6 @@
 
 .homeTitleBlock {
     white-space: nowrap;
-    text-align: center;
     background-image: url("Images/hometitle.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,85 +58,74 @@
 
 .homeTitle {
     font-family: sans-serif;
-    color: rgb(225, 225, 225);
-    font-size: 70px;
+    color: #333;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 30vh;
 }
 
 .homeSubtitle {
     font-family: sans-serif;
-    color: rgb(225, 225, 225);
+    color: #333;
     font-size: 25px;
-    text-align: justify;
+    text-align: center;
 }
 
-.homeCamp2 {
-    font-family: Arial;
+
+.homeWhatIsImg {
+    width: 40%;
+    float: left;
 }
 
-.homeCamp2 img {
-    width: 60%;
-}
-
-.homeCamp2Block {
+.homeWhatIsText {
     float: right;
     font-size: 20px;
     width: 40%;
-    padding: 4%;
-
-}
-
-.homeCamp2Block p {
-    font-size: larger;
+    margin: 7%;
 }
 
 
 .homeTryCampingText {
     float: left;
     font-size: 20px;
-    width: 50%;
-    padding: 4%;
+    width: 40%;
+    margin: 6%;
 }
 
 .homeTryCampingImage {
     float: right;
-    width: 50%;
+    width: 40%;
 }
 
-.homeTryCamping {
+
+
+/* .homeTryCamping {
     display: flex;
-}
+} */
 
 .homeCamp4 {
     float: right;
 }
 
-/* .shop {
-    position: relative;
-} */
-
-
-/* What does shop style do????/ */
-
-
 
 .homeShoptext {
     float: right;
-    padding: 3%;
-    width: 25%;
 
+    width: 25%;
+    margin: 5%;
 }
 
 .homeShopimage {
     float: left;
-    width: 50%;
-    margin: 4%;
+    width: 60%;
+
 }
 
 .homeQuiztxt {
     float: left;
     font-size: 20px;
     width: 40%;
-    margin: 4%;
+    margin: 5%;
 }
 
 .homeQuizImage {
