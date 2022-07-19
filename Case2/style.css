@@ -49,29 +49,19 @@
 .homeTitleBlock {
     white-space: nowrap;
     text-align: center;
-}
-
-.homeTitleImg {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    background-image: url("Images/hometitle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .homeTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -150%);
     font-family: sans-serif;
     color: rgb(225, 225, 225);
     font-size: 70px;
 }
 
 .homeSubtitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -110%);
     font-family: sans-serif;
     color: rgb(225, 225, 225);
     font-size: 25px;
@@ -138,16 +128,17 @@
 .homeShopimage {
     float: left;
     width: 50%;
+    margin: 4%;
 }
 
 .homeQuiztxt {
     float: left;
     font-size: 20px;
-    width: 50%;
-    padding: 4%;
+    width: 40%;
+    margin: 4%;
 }
 
 .homeQuizImage {
     float: right;
-    width: 50%;
+    width: 40%;
 }
