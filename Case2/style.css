@@ -143,6 +143,10 @@
     padding-left: 5vh;
 }
 
-#homeWhatIsText {
+#homeWhatIsTxt {
     padding-top: 20vh;
+}
+
+#homeTryCampingTxt {
+    padding-top: 30vh;
 }
