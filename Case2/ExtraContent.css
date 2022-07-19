@@ -1,4 +1,9 @@
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
     padding: 50px;
     background-color: rgb(215, 228, 239);
 }
@@ -7,6 +12,7 @@ h1 {
     /* background-color: black; */
     color: rgb(73, 120, 73);
 }
+
 .rule {
     font-size: 25px;
     /* background-color: black; */
@@ -15,9 +21,10 @@ h1 {
 
 .extrapara {
     font-size: 20px;
-    
+
 }
-.extradesc{
+
+.extradesc {
     font-size: 20px;
-    
+
 }
