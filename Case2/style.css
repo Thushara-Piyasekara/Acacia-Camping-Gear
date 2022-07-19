@@ -86,7 +86,7 @@
 .homeTryCampingText {
     float: left;
     font-size: 20px;
-    width: 40%;
+    width: 35%;
     margin: 3%;
 }
 
@@ -122,4 +122,15 @@
 .homeQuizImage {
     float: right;
     width: 40%;
+}
+
+.homeImgL {
+    float: left;
+    width: 55%;
+}
+
+.homeImgR {
+    float: right;
+    width: 55%;
+    padding: 20px;
 }
