@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      img {
+        width: 5%;
+      }
+        .navbar {
+            background-color: #efe2d0;
+            width: 100%;
+            position: fixed;
+            top: -10px;
+            transition: top 550ms;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 32px;
+        }
+        .navbar a:hover {
+            background-color: #628563;
+        }
+        .navbar a.active {
+            background-color: #774040;
+            color: #fff;
+        }
+
+        * {
+          box-sizing: border-box;
+          
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        } 
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .nav a.act {
+            background-color: black;
+            color: orange;
+        }
+        
+        .place {
+          font-weight: bold;
+          color: orangered;
+        }
+    </style>
+</head>
+<body>
+
+  <h1><center> Gallery</center></h1>
+  
+  <div id="navbar" class="navbar">
+    <img id="logo" src="Images/logo.svg">
+    <a href="#home">HOME</a>
+    <a href="#products">PRODUCTS</a>
+    <a href="#query">QUERY</a>
+    <a href="#quiz">QUIZ</a>
+    <a class="active" href="#sitemap.html">SITEMAP</a>
+    <a href="thumbnail.html">GALLERY</a>
+    <a href="#details">STUDENT DETAILS</a>
+  </div>
+  <br><br>
+
+    <!-- <a class="imag1" href="pic1.jpg" target="_blank">
+        <img src="Images/pic1.jpg" alt="forest" style="width:250">
+    </a>
+
+    <a href=""></a>
+
+    <a href=""></a>
+
+    <a href=""></a> -->
+
+
+    <!-- creat the gallery part-->
+    <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="Images/Elephants+Yala+National+Park+in+Sri+Lanka+2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="Images/belihuloya.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="Images/wilpattu.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="Images/udawalawe.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="Images/Meemure.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="Images/knuckles.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="Images/Elephants+Yala+National+Park+in+Sri+Lanka+2.jpg" style="width:100%" onclick="currentSlide(1)" alt='
+            <div class="place">Yala</div>
+            <div class="placeinfo">The sensational Yala wildlife National Park promises unparallel thrill and excellent adventurous experience with a visual treat of scenic excellence in the exclusive Yala Safari Camping. It is indeed an extra ordinary experience to rise up to a place where for miles there is no soul visible except the caretakers.</div>'>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/belihuloya.jpg" style="width:100%" onclick="currentSlide(2)" alt="
+            <div class='place'>Belihuloya</div>
+            <div class='placeinfo'>A charming hillside village situated in the Ratnapura District, approximately 160 kilometres from Colombo is nature's marvel, a miracle of creation blessed with an abundance of waterfalls, streams, nature, cycling trails and numerous opportunities for bird watching and camping.</div>">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/wilpattu.jpg" style="width:100%" onclick="currentSlide(3)" alt='
+            <div class="place">Wilpattu</div>
+            <div class="placeinfo">Wilpattu National Park (Willu-pattu, "Land of Lakes") is a national park in Sri Lanka. The unique feature of this park is the existence of "Willus" (natural lakes) – natural, sand-rimmed water basins or depressions that fill with rainwater.</div>'>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/udawalawe.jpg" style="width:100%" onclick="currentSlide(4)" alt='
+            <div class="place">Udawalawe</div>
+            <div class="placeinfo">The town is the main entry point into the Udawalawe National Park which is a major National Park in Sri Lanka which is renowned for its high population of wild Asian elephants. The Udawalawe National Park located approximately 160 km (99 mi) away from Colombo, is the closest national park to Colombo.</div>'>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Images/meemure.jpg" style="width:100%" onclick="currentSlide(5)" alt='
+            <div class="place">Meemure</div>
+            <div class="placeinfo">Meemure is a village with a population of about 420 people living in it It is located near the border between Kandy District and Matale District in the Knuckles Mountain Range. Meemure is one of the most remote villages in Sri Lanka with the only access via a 14 km trail from the town of Loolwatte.</div>'>
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="Images/knuckles.jpg" style="width:100%" onclick="currentSlide(6)" alt='
+            <div class="place">Knuckles Mountain Range</div>
+            <div class="placeinfo">The Knuckles Mountain Range lies in central Sri Lanka, in the Districts of Matale and Kandy. The range takes its name from a series of recumbent folds and peaks in the west of the massif which resemble the knuckles of clenched fist when viewed from certain locations in the Kandy District.</div>'>
+          </div>
+        </div>>
+    </div>
+
+    <script src="thumbnail.js"></script>
+
+</body>
+</html>
