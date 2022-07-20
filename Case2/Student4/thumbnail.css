@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -38,9 +39,12 @@ img {
     color: #fff;
 }
 
-* {
-    box-sizing: border-box;
-
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding-top: 1%;
+    padding-right: 3%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
