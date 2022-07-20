@@ -1,23 +1,19 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
-    background-color:orange;/* #f5eee6 */
+    background-color: #f5eee6;
 }
 
 img {
-    width:   80px;
+    width: 80px;
 }
 
 h1 {
     text-align: center;
 }
-/* 
-#topnav {
-    background-color: brown;
-    display: block;
-    color: orange;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-} */
+
 .navbar {
     background-color: #efe2d0;
     width: 100%;
@@ -25,6 +21,20 @@ h1 {
     top: -10px;
     transition: top 550ms;
 }
+
+#logo {
+    float: right;
+    height: auto;
+    width: 80px;
+}
+
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    transition: top 550ms;
+}
+
 .navbar a {
     float: left;
     display: block;
@@ -35,114 +45,142 @@ h1 {
     font-weight: bold;
     padding: 32px;
 }
+
 .navbar a:hover {
     background-color: #628563;
 }
+
 .navbar a.active {
     background-color: #774040;
     color: #fff;
 }
 
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding: 10px;
+}
+
 /* SVG diagram CSS */
-#line1{
-    stroke: black;
+#l1 {
+    stroke: #628563;
     stroke-width: 1px;
 }
 
-.Title5{
-	
-    padding-top:20px;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:70px ;
-    color:white;
+.Title5 {
+
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    color: white;
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
 
 }
 
-#diagram{
-    
-	margin-top:0px;
+#diagram {
+
+    margin-top: 0px;
 
 }
 
-#rec1, #rec2, #rec3, #rec4, #rec5, #rec6, #rec7{
-    
-	stroke: white;
+#rect1,
+#rect2,
+#rect3,
+#rect4,
+#rect5,
+#rect6,
+#rect7 {
+
+    stroke: white;
     stroke-width: 5;
     stroke-opacity: 0.7;
-    fill:black;
+    fill: #628563;
 
 }
 
-#rec1:hover{
-    
-	stroke-opacity: 1.5;
+#rect1:hover {
+
+    stroke-opacity: 1.5;
 
 }
 
-#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7{
-    
-	fill:orangered;
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7 {
+
+    fill: #f5eee6;
     font-size: 20px;
     font-weight: 400;
-    font-family:'Trebuchet MS', sans-serif;
-    text-anchor:middle;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-anchor: middle;
 
 }
 
-#txt1:hover{
+#text1:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt2:hover{
+#text2:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt3:hover{
+#text3:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt4:hover{
+#text4:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt5:hover{
+#text5:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt6:hover{
+#text6:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt7:hover{
+#text7:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8{
+#l1,
+#l2,
+#l3,
+#l4,
+#l5,
+#l6,
+#l7,
+#l8 {
 
-	stroke:black;
-	stroke-width:5;
+    stroke: black;
+    stroke-width: 5;
 
 }

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Store | Acacia Camping Gear</title>
+    <script>
+        var validFirstname;
+        var validLastname;
+        var validEmail;
+        var total;
+        var purchasedItems;
+        var price;
+
+        window.onscroll = function () { showNavbar() };
+
+        function showNavbar() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+        }
+        function getSelectedValue() {
+            return selectList[selectList.selectedIndex].value;
+        }
+        function validation(itemform) {
+            var firstName = itemform.firstName.value;
+            var lastName = itemform.lastName.value;
+            var email = itemform.email.value;
+            var item = itemform.productSelection.value;
+            var quantity = itemform.productQuantity.value;
+
+            if (firstName === "") {
+                alert("Please enter your first name");
+            } else if (lastName === "") {
+                alert("Please enter your last name");
+            } else if (email === "" || email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+                alert("Please enter a valid email address");
+            } else if (item === "noneSelected") {
+                alert("Please select an item to purchase");
+            } else if (quantity === "0") {
+                alert("Please select amount of items to purchase");
+            } else {
+                validFirstname = firstName;
+                validLastname = lastName;
+                validEmail = email;
+
+                cartProcessing(itemform);
+            }
+        }
+        function cartProcessing(itemform) {
+            var item = itemform.productSelection.value;
+            var quantity = itemform.productQuantity.value;
+            const pricesArray = [199.99, 159.99, 249.99, 399.99, 99.99, 59.99, 199.99, 89.99];
+
+            switch (item) {
+                case "sTent":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("tent1").innerHTML;
+                    total = pricesArray[0] * quantity
+                    price = pricesArray[0];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Small Tent" + " x" + quantity;
+                    break;
+                case "mTent":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("tent2").innerHTML;
+                    total = pricesArray[1] * quantity
+                    price = pricesArray[1];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Medium Tent" + " x" + quantity;
+                    break;
+                case "lTent":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("tent3").innerHTML;
+                    total = pricesArray[2] * quantity
+                    price = pricesArray[2];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Large Tent" + " x" + quantity;
+                    break;
+                case "xlTent":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("tent4").innerHTML;
+                    total = pricesArray[3] * quantity
+                    price = pricesArray[3];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Extra Large Tent" + " x" + quantity;
+                    break;
+                case "portastove":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("portastove").innerHTML;
+                    total = pricesArray[4] * quantity
+                    price = pricesArray[4];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Portable Stove" + " x" + quantity;
+                    break;
+                case "flashlight":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("flashlight").innerHTML;
+                    total = pricesArray[5] * quantity
+                    price = pricesArray[5];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Flashlight" + " x" + quantity;
+                    break;
+                case "backpack":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("backpack").innerHTML;
+                    total = pricesArray[6] * quantity
+                    price = pricesArray[6];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Utility Backpack" + " x" + quantity;
+                    break;
+                case "coffeeMaker":
+                    document.getElementById("productCartItem").innerHTML = document.getElementById("coffeeMaker").innerHTML;
+                    total = pricesArray[7] * quantity
+                    price = pricesArray[7];
+                    document.getElementById("totalPrice").innerHTML = "Total Price: $" + total;
+                    purchasedItems = "Pour-over Coffee Maker" + " x" + quantity;
+                    break;
+            }
+        }
+        function checkout() {
+            if (total == null) {
+                alert("Cart is empty")
+            } else {
+                alert("\nName: " + validFirstname + " " + validLastname +
+                    "\nEmail: " + validEmail +
+                    "\n--------------------------" +
+                    "\nInvoice Details" +
+                    "\nPurchase: " + purchasedItems +
+                    "\nPrice: $" + price +
+                    "\n\n" + "Total Bill: $" + total);
+            }
+        }
+    </script>
+    <div id="navbar" class="navbar">
+        <img id="logo" src="resources/img/logo.svg" alt="Image of the logo">
+        <a href="../mainPage.html">HOME</a>
+        <a class="active" href="Student1/buyProducts.html">PRODUCTS</a>
+        <a href="../Student2/Query.html">QUERY</a>
+        <a href="../Student3/campquiz.html">QUIZ</a>
+        <a href="../Student4/sitemap.html">SITEMAP</a>
+        <a href="../Student4/thumbnail.html">THUMBNAILS</a>
+        <a href="../Student3/aboutus.html">STUDENT DETAILS</a>
+    </div>
+</head>
+
+<body>
+    <div class="productsTitleBlock">
+        <div class="productsTitle">High Quality Camping Gear
+            <p>Pure Comfort, Absolute Versatilty</p>
+            <a href="#Down"><img id="productsMoveDown" src="resources/img/downarrow.png"></a>
+        </div>
+        <a id="Down"></a>
+    </div>
+    <div class="saleItems">
+        <p id="tentCategory" class="itemCategoryTitle">Tents</p>
+        <hr>
+        <img class="itemCategory" src="resources/img/tent.jpg">
+        <div class="itemSet">
+            <div id="tent1" class="itemDetails">
+                <img class="itemBorder" src="resources/img/tent1.png">
+                <div class="itemTitle">Small Tent
+                    <div class="itemPrice">$119.99</div>
+                </div>
+            </div>
+            <div id="tent2" class="itemDetails">
+                <img class="itemBorder" src="resources/img/tent2.png">
+                <div class="itemTitle">Medium Tent
+                    <div class="itemPrice">$159.99</div>
+                </div>
+            </div>
+            <div id="tent3" class="itemDetails">
+                <img class="itemBorder" src="resources/img/tent3.png">
+                <div class="itemTitle">Large Tent
+                    <div class="itemPrice">$249.99</div>
+                </div>
+            </div>
+            <div id="tent4" class="itemDetails">
+                <img class="itemBorder" src="resources/img/tent4.png">
+                <div class="itemTitle">XL Tent
+                    <div class="itemPrice">$399.99</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="itemCategoryTitle">Miscellaneous Tools/Gear</p>
+        <hr>
+        <img class="itemCategory" src="resources/img/misc.jpg">
+        <div class="itemSet">
+            <div id="portastove" class="itemDetails">
+                <img class="itemBorder" src="resources/img/portastove.jpg">
+                <div class="itemTitle">Portable Stove
+                    <div class="itemPrice">$99.99</div>
+                </div>
+            </div>
+            <div id="flashlight" class="itemDetails">
+                <img class="itemBorder" src="resources/img/flashlight.jpg">
+                <div class="itemTitle">Flashlight
+                    <div class="itemPrice">$59.99</div>
+                </div>
+            </div>
+            <div id="backpack" class="itemDetails">
+                <img class="itemBorder" src="resources/img/bag.jpg">
+                <div class="itemTitle">Utility Backpack
+                    <div class="itemPrice">$199.99</div>
+                </div>
+            </div>
+            <div id="coffeeMaker" class="itemDetails">
+                <img class="itemBorder" src="resources/img/coffeepot.jpg">
+                <div class="itemTitle">Pour-over Coffee Maker
+                    <div class="itemPrice">$89.99</div>
+                </div>
+            </div>
+        </div>
+        <p id="purchaseCategory">Purchase</p>
+        <hr>
+        <img class="itemCategory" src="resources/img/purchase.jpg">
+    </div>
+    <div>
+        <form name="productForm">
+            <fieldset id="orderDetailsFeildset">
+                <div class="orderDetails">
+                    <div class="productFormTitle">Place Your Order</div>
+                    <br>
+                    <div class="customerDetails">
+                        <label class="formLabel" for="firstName">First Name:</label>
+                        <br>
+                        <input class="orderTxtBox" type="text" name="firstName" id="firstName" size="30"
+                            placeholder="Enter First Name">
+                    </div>
+                    <div class="customerDetails">
+                        <label class="formLabel" for="lastName">Last Name:</label>
+                        <br>
+                        <input class="orderTxtBox" type="text" name="lastName" id="lastName" size="30"
+                            placeholder="Enter Last Name">
+                    </div>
+                    <div class="customerDetails">
+                        <label class="formLabel" for="email">Email:</label>
+                        <br>
+                        <input class="orderTxtBox" type="text" name="email" id="email" size="20"
+                            placeholder="Enter Email Address">
+                    </div>
+
+                    <div class="itemOrder">
+                        <label class="formLabel" for="productSelection">Select Your Product:</label>
+                        <br>
+                        <select id="productSelection" class="orderTxtBox" name="productSelection">
+                            <option value="noneSelected">Please Select</option>
+                            <option value="sTent">Small Tent (2 Person Capacity)</option>
+                            <option value="mTent">Medium Tent (4 Person Capacity)</option>
+                            <option value="lTent">Large Tent (6 Person Capacity)</option>
+                            <option value="xlTent">Extra Large Tent (8 Person Capacity)</option>
+                            <option value="portastove">Portable Stove</option>
+                            <option value="flashlight">Flashlight</option>
+                            <option value="backpack">Utility Backpack</option>
+                            <option value="coffeeMaker">Pour-over Coffee Maker</option>
+                        </select>
+                    </div>
+
+                    <div class="itemOrder">
+                        <label class="formLabel" for="productQuantity">Quantity:</label>
+                        <br>
+                        <select id="productQuantity" class="orderTxtBox" name="productQuantity">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="itemOrder">
+                        <input type="reset" id="clearDetails" value="Clear">
+                        <input type="button" onclick="validation(this.form)" id="addToCart" value="Add to Cart">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="productCart">
+        <div id="cartTitle" class="productFormTitle">Cart</div>
+        <div class="formAlignment">
+            <div class="productCartItem" id="productCartItem"></div>
+        </div>
+        <div id="totalPrice">Total Price: </div>
+        <input type="button" onclick="checkout()" id="checkoutBtn" name="checkoutBtn" value="Place Order">
+    </div>
+    <footer>
+        <a href="PageEditor/pageEditorStudent1.html">Page Editor</a>
+    </footer>
+</body>
+
+</html>

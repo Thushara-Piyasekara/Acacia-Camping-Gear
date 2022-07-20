@@ -1,3 +1,4 @@
+//declaring array to store question and options
 const Questions = [
     {
         question:"What is a good safety item to keep beside your campfire?",
@@ -101,7 +102,7 @@ let quizsummary="";
 let numstring="";
 
 
-
+//displays  the question and answers 
 function Nextquestion(index) {
     let currentQuestion = Questions[index]
     document.getElementById("question").innerHTML = questionnum
@@ -114,6 +115,7 @@ function Nextquestion(index) {
 
 }
 
+//checks if the choice of the player is correct
 function checkAnswer() {
     let currentQuestion = Questions[indexnum] 
     let currentQuestionAnswer = currentQuestion.correct
@@ -129,7 +131,7 @@ function checkAnswer() {
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('optioncbox').style.display = "flex"
     }
-
+    //Also changes the background color correctly and adjusts the variables
     options.forEach((option) => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
             document.getElementById(correct).style.backgroundColor = "#628563";
@@ -140,7 +142,7 @@ function checkAnswer() {
                 questionnum++;
             }, 1000)
             numstring=indexnum.toString();
-            quizsummary=quizsummary+numstring+". correct<br/>";
+            quizsummary=quizsummary+numstring+". correct<br/>";//Quiz summary
         }
 
         else if (option.checked && option.value !== currentQuestionAnswer) {
@@ -156,11 +158,12 @@ function checkAnswer() {
             }, 1000)
             numstring=indexnum.toString();
             numstring=indexnum.toString();
-            quizsummary=quizsummary+numstring+". wrong<br/>";
+            quizsummary=quizsummary+numstring+". wrong<br/>";//Quiz summary
         }
     })
 }
 
+//calls the next question when needed 
 function handlenextQ() {
     checkAnswer() 
     unCheckRadioButtons()
@@ -175,6 +178,7 @@ function handlenextQ() {
     }, 1000);
 }
 
+//Resets the options after each question
 function resetOption() {
     const options = document.getElementsByName("option");
     options.forEach((option) => {
@@ -182,6 +186,7 @@ function resetOption() {
     })
 }
 
+//Resets the buttons to be used next time
 function unCheckRadioButtons() {
     const options = document.getElementsByName("option");
     for (let i = 0; i < options.length; i++) {
@@ -189,6 +194,7 @@ function unCheckRadioButtons() {
     }
 }
 
+//Responsible for displaying quiz summary, timetaken, remarks and score
 function handleEnd() {
     let comment = null
     let commentColor = null
@@ -222,6 +228,7 @@ function handleEnd() {
 
 }
 
+//resets the variables to be used for the next round
 function closeScore() {
     questionnum = 1;
     playerScore = 0;
@@ -231,14 +238,14 @@ function closeScore() {
     document.getElementById('displaycontainer').style.display = "none";
 }
 
-//function to close warning modal
+//calls the countdown func
 function closeOption() {
     countDown();
     document.getElementById('optioncontainer').style.display = "none";
 }
 
 
-
+// responsible for timing the quiz
 function countDown(){
 if(time > 0){
     time--;;

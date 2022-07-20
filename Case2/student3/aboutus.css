@@ -1,9 +1,6 @@
-* {
-  border: #000 solid 1px;
-}
-
 body {
   background-color: #f5eee6 !important;
+  font-family: sans-serif;
 }
 
 .navbar {
@@ -53,7 +50,6 @@ body {
 .studentinfo img {
   display: block;
   width: 350px;
-  ;
   height: 450px;
 }
 
@@ -92,14 +88,25 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.pagedev3 button{
-    width: 150px;
-    height: 40px;
-    color: rgb(25, 25, 25);
-    font-weight: 600;
-    border: 2px solid gray;
-    cursor: pointer;
-    outline: none;
-    margin-left: 110px;
-    margin-top:100px ;
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  height: 50px;
+  background-color: #774040;
+  width: 100%;
+}
+
+footer a {
+  font-weight: bold;
+  color: #f5eee6;
+  text-decoration: none;
+  padding: 10px;
+  line-height: 2;
+}
+
+footer a:hover {
+  background-color: #628563;
+  color: #000;
 }
