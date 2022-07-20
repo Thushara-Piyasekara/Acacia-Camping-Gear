@@ -10,7 +10,7 @@
         window.onscroll = function () { showNavbar() };
 
         function showNavbar() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            if (document.documentElement.scrollTop > 150) {
                 document.getElementById("navbar").style.top = "0";
             }
             else {
