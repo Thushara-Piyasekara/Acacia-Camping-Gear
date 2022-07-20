@@ -194,7 +194,7 @@ function unCheckRadioButtons() {
     }
 }
 
-//Responsible for displaying quiz summary, timetaken, rema
+//Responsible for displaying quiz summary, timetaken, remarks and score
 function handleEnd() {
     let comment = null
     let commentColor = null
@@ -228,6 +228,7 @@ function handleEnd() {
 
 }
 
+//resets the variables to be used for the next round
 function closeScore() {
     questionnum = 1;
     playerScore = 0;
@@ -237,14 +238,14 @@ function closeScore() {
     document.getElementById('displaycontainer').style.display = "none";
 }
 
-//function to close warning modal
+//calls the countdown func
 function closeOption() {
     countDown();
     document.getElementById('optioncontainer').style.display = "none";
 }
 
 
-
+// responsible for timing the quiz
 function countDown(){
 if(time > 0){
     time--;;
