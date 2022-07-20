@@ -1,112 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <title>Query</title>
   <link rel="stylesheet" href="Query.css">
   <script src="Query.js"></script>
 </head>
 
 <body>
+  <div id="navbar" class="navbar">
+    <img id="logo" src="images/logo.svg" alt="logo">
+    <a href="#home">HOME</a>
+    <a href="#products">PRODUCTS</a>
+    <a class="active" href="Query/Query.html">QUERY</a>
+    <a href="#quiz">QUIZ</a>
+    <a href="#sitemap">SITEMAP</a>
+    <a href="#thumbnails">THUMBNAILS</a>
+    <a href="#details">STUDENT DETAILS</a>
+  </div>
 
-  <body class="homePage">
-    <div id="navbar" class="navbar">
-      <img id="logo" src="images/logo.svg">
-      <a href="#home">HOME</a>
-      <a href="#products">PRODUCTS</a>
-      <a class="active" href="Query/Query.html">QUERY</a>
-      <a href="#quiz">QUIZ</a>
-      <a href="#sitemap">SITEMAP</a>
-      <a href="#thumbnails">THUMBNAILS</a>
-      <a href="#details">STUDENT DETAILS</a>
+  <!-- empty line, without this the content below overlaps with the navbar -->
+  <p><br><br></p>
+
+  <div class="bigContainer">
+    <form id="queryForm">
+      <fieldset class="fieldsSection">
+        <legend>Query Form</legend>
+
+        <table>
+
+          <tr>
+            <td class="labelColumn"><label for="name">Name :</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email Address :</label></td>
+            <td><input type="text" id="email" name="email" placeholder="Enter your email"></td>
+          </tr>
+
+          <tr>
+            <td><label for="contact">Contact Number :</label></td>
+            <td><input type="text" id="contact" name="contact" placeholder="Enter your contact number">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Query Subject :</td>
+            <td><select name="querySubject" id="querySubject">
+                <option value="">--None--</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Question">Question</option>
+              </select></td>
+          </tr>
+
+          <tr>
+            <td><label for="details">Query Details:</label></td>
+            <td><textarea name="details" cols="20" rows="6" id="details"></textarea></td>
+          </tr>
+
+        </table>
+      </fieldset>
+      <fieldset class="buttonSection">
+        <button type="button" id="viewQuery" onclick="ValidateInputs(queryForm)">View Query</button>
+      </fieldset>
+    </form>
+
+    <div id="summaryView" style="display:none;">
+      <fieldset id="summaryField" class="fieldsSection">
+        <legend>Query View</legend>
+
+        <table>
+          <tr>
+            <td id="SumQuery_0" class="SumQuery"></td>
+            <td id="SumVal_0"></td>
+          </tr>
+          <tr>
+            <td id="SumQuery_1" class="SumQuery"></td>
+            <td id="SumVal_1"></td>
+          </tr>
+          <tr>
+            <td id="SumQuery_2" class="SumQuery"></td>
+            <td id="SumVal_2"></td>
+          </tr>
+          <tr>
+            <td id="SumQuery_3" class="SumQuery"></td>
+            <td id="SumVal_3"></td>
+          </tr>
+          <tr>
+            <td id="SumQuery_4" class="SumQuery"></td>
+            <td id="SumVal_4"></td>
+          </tr>
+
+        </table>
+      </fieldset>
+      <fieldset class="buttonSection">
+        <button type="button" id="editQuery" onclick="EditQuery()">Back to Edit</button>
+        <button type="button" id="sendEmail" onclick="SendQuery(queryForm)">Send Query</button>
+      </fieldset>
     </div>
+  </div>
 
-    <!-- empty line, without this the content below overlaps with the navbar -->
-    <p><br></br></p>
-
-    <div class="bigContainer">
-      <form id="queryForm">
-        <fieldset class="fieldsSection">
-          <legend>Query Form</legend>
-
-          <table>
-
-            <tr>
-              <td class="labelColumn"><label for="name">Name :</label></td>
-              <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
-            </tr>
-
-            <tr>
-              <td><label for="email">Email Address :</label></td>
-              <td><input type="text" id="email" name="email" placeholder="Enter your email"></td>
-            </tr>
-
-            <tr>
-              <td><label for="contact">Contact Number :</label></td>
-              <td><input type="text" id="contact" name="contact" placeholder="Enter your contact number">
-              </td>
-            </tr>
-
-            <tr>
-              <td>Query Subject :</td>
-              <td><select name="querySubject" id="querySubject">
-                  <option value="">--None--</option>
-                  <option value="Suggestion">Suggestion</option>
-                  <option value="Complaint">Complaint</option>
-                  <option value="Question">Question</option>
-                </select></td>
-            </tr>
-
-            <tr>
-              <td><label for="details">Query Details:</label></td>
-              <td><textarea name="details" cols="20" rows="6"></textarea></td>
-            </tr>
-
-          </table>
-        </fieldset>
-        <fieldset class="buttonSection">
-          <button type="button" id="viewQuery" onclick="ValidateInputs(queryForm)">View Query</button>
-        </fieldset>
-      </form>
-
-      <div id="summaryView" style="display:none;">
-        <fieldset id="summaryField" class="fieldsSection">
-          <legend>Query View</legend>
-
-          <table>
-            <tr>
-              <td id="SumQuery_0" class="SumQuery"></td>
-              <td id="SumVal_0"></td>
-            </tr>
-            <tr>
-              <td id="SumQuery_1" class="SumQuery"></td>
-              <td id="SumVal_1"></td>
-            </tr>
-            <tr>
-              <td id="SumQuery_2" class="SumQuery"></td>
-              <td id="SumVal_2"></td>
-            </tr>
-            <tr>
-              <td id="SumQuery_3" class="SumQuery"></td>
-              <td id="SumVal_3"></td>
-            </tr>
-            <tr>
-              <td id="SumQuery_4" class="SumQuery"></td>
-              <td id="SumVal_4"></td>
-            </tr>
-
-          </table>
-        </fieldset>
-        <fieldset class="buttonSection">
-          <button type="button" id="editQuery" onclick="EditQuery()">Back to Edit</button>
-          <button type="button" id="sendEmail" onclick="SendQuery(queryForm)">Send Query</button>
-        </fieldset>
-      </div>
-    </div>
-
-    <div class="footer">
-      <a class="editorLink" href="EditorPage/Editor_Thushara.html">Editor Page</a>
-    </div>
-  </body>
+  <div class="footer">
+    <a class="editorLink" href="EditorPage/Editor_Thushara.html">Editor Page</a>
+  </div>
+</body>
 
 </html>
