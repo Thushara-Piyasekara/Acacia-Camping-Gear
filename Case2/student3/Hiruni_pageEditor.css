@@ -1,31 +1,3 @@
-.navbar {
-    background-color: #efe2d0;
-    width: 100%;
-    transition: top 550ms;
-
+.profilepic img{
+    border-radius: 50%;
 }
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #000;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 32px;
-}
-
-.navbar a:hover {
-    background-color: #628563;
-}
-
-.navbar a.active {
-    background-color: #774040;
-    color: #fff;
-}
-  #logo{
-    width: 70px;
-    height: 70px;
-    
-  }
