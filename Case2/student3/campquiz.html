@@ -11,109 +11,111 @@
 </head>
 
 <body onload="Nextquestion(0)">
-    <div id="navbar" class="navbar">
-        <img id="logo" src="logo.svg" alt="Image of the logo">
-        <a href="../Home.html">HOME</a>
-        <a href="#products">PRODUCTS</a>
-        <a href="../Student2/Query.html">QUERY</a>
-        <a class="active" href="#quiz">QUIZ</a>
-        <a href="../Student4/sitemap.html">SITEMAP</a>
-        <a href="../Student4/thumbnail.html">THUMBNAILS</a>
-        <a href="aboutus.html">STUDENT DETAILS</a>
-    </div>
-    <div class="mainquizpage" id="mainpage">
 
-        <div class="quizcontainer">
+    <body>
+        <div id="navbar" class="navbar">
+            <img id="logo" src="logo.svg" alt="Image of the logo">
+            <a href="../Home.html">HOME</a>
+            <a href="../Student1/buyProducts.html">PRODUCTS</a>
+            <a href="../Student2/Query.html">QUERY</a>
+            <a class="active" href="#quiz">QUIZ</a>
+            <a href="../Student4/sitemap.html">SITEMAP</a>
+            <a href="../Student4/thumbnail.html">THUMBNAILS</a>
+            <a href="aboutus.html">STUDENT DETAILS</a>
+        </div>
+        <div class="mainquizpage" id="mainpage">
 
-            <div class="quizdetails">
+            <div class="quizcontainer">
 
-                <h1>Score: <span id="score"></span></h1>
-                <h1>Question: <span id="question"></span>/10</h1>
-                <p id="timer"></p>
-            </div>
+                <div class="quizdetails">
 
-            <div class="displayqcontainer">
+                    <h1>Score: <span id="score"></span></h1>
+                    <h1>Question: <span id="question"></span>/10</h1>
+                    <p id="timer"></p>
+                </div>
 
-                <span id="displayquestion"></span>
+                <div class="displayqcontainer">
 
-            </div>
+                    <span id="displayquestion"></span>
 
-            <div class="optionmain">
+                </div>
 
-                <div class="optioncontainer" id="optioncontainer">
+                <div class="optionmain">
 
-                    <div class="optionbox">
+                    <div class="optioncontainer" id="optioncontainer">
 
-                        <h1>Please choose an option</h1>
+                        <div class="optionbox">
 
-                        <div class="buttoncontainer">
-                            <button type="button" id="startq" onclick="closeOption()">Start quiz</button>
+                            <h1>Please choose an option</h1>
+
+                            <div class="buttoncontainer">
+                                <button type="button" id="startq" onclick="closeOption()">Start quiz</button>
+                            </div>
+
                         </div>
+
+                    </div>
+
+                    <span>
+                        <input type="radio" id="opt-1" name="option" class="radio" value="optA" />
+                        <label for="opt-1" class="option" id="opt1label"></label>
+                    </span>
+                    <br>
+                    <span>
+                        <input type="radio" id="opt-2" name="option" class="radio" value="optB" />
+                        <label for="opt-2" class="option" id="opt2label"></label>
+                    </span>
+                    <br>
+                    <span>
+                        <input type="radio" id="opt-3" name="option" class="radio" value="optC" />
+                        <label for="opt-3" class="option" id="opt3label"></label>
+                    </span>
+                    <br>
+                    <span>
+                        <input type="radio" id="opt-4" name="option" class="radio" value="optD" />
+                        <label for="opt-4" class="option" id="opt4label"></label>
+                    </span>
+
+                </div>
+
+                <div class="nextcontainer">
+                    <button onclick="handlenextQ()">Next </button>
+                </div>
+
+            </div>
+
+            <div class="displaycontainer" id="displaycontainer">
+
+                <div class="box">
+
+                    <h1>Quiz Completed</h1>
+
+                    <div class="displaydetails">
+
+                        <p>Score:<span id="totscore"></span></p>
+                        <p><span id="comment"></span></p>
+                        <p>Quiz summary</p>
+                        <p><span id="QSummary"></span></p>
+                        <P>Time taken to complete quiz:<span id="timetaken">sec</span></P>
+
+                    </div>
+
+                    <div class="button">
+
+                        <button onclick="closeScore()">Try Again</button>
 
                     </div>
 
                 </div>
 
-                <span>
-                    <input type="radio" id="opt-1" name="option" class="radio" value="optA" />
-                    <label for="opt-1" class="option" id="opt1label"></label>
-                </span>
-                <br>
-                <span>
-                    <input type="radio" id="opt-2" name="option" class="radio" value="optB" />
-                    <label for="opt-2" class="option" id="opt2label"></label>
-                </span>
-                <br>
-                <span>
-                    <input type="radio" id="opt-3" name="option" class="radio" value="optC" />
-                    <label for="opt-3" class="option" id="opt3label"></label>
-                </span>
-                <br>
-                <span>
-                    <input type="radio" id="opt-4" name="option" class="radio" value="optD" />
-                    <label for="opt-4" class="option" id="opt4label"></label>
-                </span>
-
-            </div>
-
-            <div class="nextcontainer">
-                <button onclick="handlenextQ()">Next </button>
             </div>
 
         </div>
-
-        <div class="displaycontainer" id="displaycontainer">
-
-            <div class="box">
-
-                <h1>Quiz Completed</h1>
-
-                <div class="displaydetails">
-
-                    <p>Score:<span id="totscore"></span></p>
-                    <p><span id="comment"></span></p>
-                    <p>Quiz summary</p>
-                    <p><span id="QSummary"></span></p>
-                    <P>Time taken to complete quiz:<span id="timetaken">sec</span></P>
-
-                </div>
-
-                <div class="button">
-
-                    <button onclick="closeScore()">Try Again</button>
-
-                </div>
-
-            </div>
-
+        <div class="pagedev3">
+            <button onclick="location.href='Hiruni_pageEditor.html';">Page Developer</button>
         </div>
+        <script src="campquiz.js"></script>
 
-    </div>
-    <div class="pagedev3">
-        <button onclick="location.href='Hiruni_pageEditor.html';">Page Developer</button>
-    </div>
-    <script src="campquiz.js"></script>
-
-</body>
+    </body>
 
 </html>
