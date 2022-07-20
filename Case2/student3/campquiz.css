@@ -257,20 +257,21 @@ input[type=radio]:checked~.option {
     color: black;
 }
 
-.pagedev3 {
-    background-color: #f5eee6;
-    margin-bottom: -50px;
-
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #774040;
+    width: 100%;
 }
-
-.pagedev3 button {
-    width: 150px;
-    height: 40px;
-    background-color: #c3c67e;
-    color: rgb(25, 25, 25);
-    font-weight: 600;
-    border: 2px solid gray;
-    cursor: pointer;
-    outline: none;
-    margin-left: 110px;
+footer a {
+    font-weight: bold;
+    color: #f5eee6;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 2;
+}
+footer a:hover {
+    background-color: #628563;
+    color: #000;
 }
