@@ -1,6 +1,7 @@
 * {
     font-family: Helvetica, sans-serif;
     font-size: large;
+    /* border: #000 solid 1px; */
 }
 
 body {
@@ -12,6 +13,8 @@ body {
 .navbar {
     background-color: #f5eee6;
     width: 100%;
+    padding: 1px;
+
 }
 
 .navbar a {
@@ -23,6 +26,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     padding: 32px;
+
 }
 
 .navbar a:hover {
@@ -43,7 +47,7 @@ body {
 /* Query and Summary */
 .bigContainer {
     background-image: url("images/bgImg.jpg");
-    height: 100vh;
+    height: 96vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,13 +56,8 @@ body {
 #queryForm,
 #summaryView {
     width: 50%;
-    padding-top: 3%;
+    padding-top: 2%;
     margin: auto;
-}
-
-
-.SumQuery {
-    padding: 2%;
 }
 
 .fieldsSection {
@@ -74,22 +73,30 @@ body {
 }
 
 
+
 table {
     width: 100%;
     margin: auto;
     table-layout: fixed;
+    overflow: scroll;
 
 }
 
 td {
     text-align: center;
     padding: 1%;
+    overflow-wrap: break-word;
 }
 
 legend {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+}
+
+.SumQuery {
+    padding: 2%;
+
 }
 
 input,
