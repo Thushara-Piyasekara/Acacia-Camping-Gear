@@ -1,0 +1,249 @@
+/*PRESENTATION PAGE*/
+.presentationBg {
+    background-image: url("resources/bg/presentationbg.jpg");
+    background-color: #fff;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#logoPresentation {
+    height: auto;
+    width: 300px;
+    background-color: #f5eee6;
+    border: solid 5px;
+    border-color: #774040;
+    margin: 25px;
+    border-radius: 60px;
+
+}
+#presentationTitle {
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f5eee6;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #628563;
+    border: solid 1px;
+    border-color: #774040;
+    padding: 40px;
+    width: 500px;
+    height: 30px;
+}
+.presentationStudent {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f5eee6;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #628563;
+    border: solid 1px;
+    border-color: #774040;
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+/*PRODUCTS PAGE*/
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #774040;
+    margin-top: 400px;
+    width: 100%;
+}
+footer a {
+    font-weight: bold;
+    color: #f5eee6;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 2;
+}
+footer a:hover {
+    background-color: #628563;
+    color: #000;
+}
+body {
+    background-color: #f5eee6;
+    font-family: sans-serif;
+    margin: 0;
+}
+#logo {
+    float: right;
+    height: auto;
+    width: 80px;
+}
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    transition: top 550ms;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 32px;
+}
+.navbar a:hover {
+    background-color: #628563;
+}
+.navbar a.active {
+    background-color: #774040;
+    color: #fff;
+}
+.productsTitleBlock {
+    white-space: nowrap;
+    background-image: url("resources/img/producttitle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.productsTitle {
+    text-align: center;
+    font-size: 90px;
+    color:#f5eee6;
+    padding-top: 35vh;
+}
+.productsTitle p {
+    font-size: 25px;
+}
+.saleItems {
+    padding-top: 20px;
+    margin: 10px;
+}
+.itemCategoryTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+.itemCategory {
+    width: 100%;
+    height: auto;
+}
+.itemSet {
+    display: flex;
+    justify-content: center;
+}
+.itemDetails {
+    float: left;
+    width: 20%;
+    margin: 10px 10px 0 0;
+}
+.itemBorder {
+    border: solid 2px;
+    border-color: #628563;
+    padding: 1px;
+    width: 95%;
+    height: auto;
+}
+.itemTitle {
+    font-weight: bold;
+    text-align: center;
+}
+.itemPrice {
+    font-weight: lighter;
+}
+#purchaseCategory {
+    font-size: 35px;
+    font-weight: bold;
+}
+#orderDetailsFeildset {
+    float: left;
+    border: solid 2px;
+    border-color: #628563;
+    background-color: #faefe1;
+    width: 50%;
+    height: 325px;
+    margin: 10px;
+}
+.productFormTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+#formLabel {
+    display: block;
+}
+.customerDetails, .itemOrder {
+    padding: 5px;
+}
+.productCart {
+    float: right;
+    border: solid 2px;
+    border-color: #628563;
+    background-color: #faefe1;
+    width: 40%;
+    height: 340px;
+    margin: 10px;
+}
+.formLabel {
+    font-weight: bold;
+}
+#productTopBtn {
+    float: right;
+}
+#productTopBtnImg {
+    height: 100%;
+}
+.formAlignment {
+    display: flex;
+    justify-content: center;
+    height: 225px;
+}
+.productCartItem {
+    width: 30%;
+}
+#checkoutBtn {
+    margin-top: 25px;
+    margin-right: 10px;
+    float: right;
+    font-weight: bold;
+    background-color: #774040;
+    border: none;
+    color: #f5eee6;
+    padding: 8px;
+}
+#clearDetails, #addToCart {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #774040;
+    border: none;
+    color: #f5eee6;
+    padding: 8px;
+}
+#cartTitle {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#productFormTitle {
+    text-align: center;
+}
+#totalPrice {
+    font-weight: bold;
+    margin-left: 10px;
+}
+.orderTxtBox {
+    border: none;
+    background-color: #efe2d0;
+}
+#productsMoveDown {
+    padding-top: 350px;
+    width: 70px;
+}
+#tentCategory {
+    margin-top: 65px;
+}
