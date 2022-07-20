@@ -72,13 +72,17 @@ body {
     border: none;
 }
 
-
+legend {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
 
 table {
     width: 100%;
     margin: auto;
     table-layout: fixed;
-    overflow: scroll;
+    /* overflow: scroll; */
 
 }
 
@@ -88,14 +92,15 @@ td {
     overflow-wrap: break-word;
 }
 
-legend {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
+.labelColumn {
+    width: 30%;
 }
+
+
 
 .SumQuery {
     padding: 2%;
+    width: 30%;
 
 }
 
@@ -114,7 +119,8 @@ select {
 }
 
 /* buttons */
-button {
+button,
+.editorLink {
     background-color: #efe2d0;
     border: none;
     color: black;
@@ -125,7 +131,8 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
+button:hover,
+.editorLink {
     background-color: #628563;
     color: #fff;
 }

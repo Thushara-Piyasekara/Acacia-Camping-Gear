@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 function ArrayMaker(formIn) {
     let nameIn = formIn.name.value;
     let emailIn = formIn.email.value;
@@ -14,7 +12,6 @@ function ArrayMaker(formIn) {
 
 
 function ValidateInputs(formIn) {
-
     const validateArr = ArrayMaker(formIn);
     const validateArrString = [" Name", " Email", " Contact No", " Query Subject", " Query Details"];
 
@@ -63,6 +60,4 @@ function SendQuery(formIn) {
         '%0D%0AQuery Details :' + validateArr[4]
 
     window.location.href = "mailto:btgp2001@gmail.com?subject=" + subject + "&body=" + body;
-
-
 }
