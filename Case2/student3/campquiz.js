@@ -18,7 +18,7 @@ const Questions = [
     },
 
     {
-        question:"What shoud you always wear if you go out in a canoe or a kayak while camping?",
+        question:"What should you always wear if you go out in a canoe or a kayak while camping?",
         optA:"A hat.",
         optB:"A waterproof camera tied around your neck.",
         optC:"A life jacket.",

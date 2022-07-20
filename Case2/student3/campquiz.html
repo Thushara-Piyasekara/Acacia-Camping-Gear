@@ -10,7 +10,7 @@
 </head>
 <body onload="Nextquestion(0)">
     <div id="navbar" class="navbar">
-        <img id="logo" src="logo.svg">
+        <img id="logo" src="logo.svg" alt="Image of the logo">
         <a href="#home">HOME</a>
         <a href="#products">PRODUCTS</a>
         <a href="#query">QUERY</a>
@@ -25,14 +25,14 @@
 
         <div class="quizdetails">
 
-            <h1>Score: <span id="score">/20</h1>
+            <h1>Score: <span id="score"></span></h1>
             <h1>Question: <span id="question"></span>/10</h1>
-            <text id="timer"></text>
+            <p id="timer"></p>
         </div>
 
         <div class="displayqcontainer">
 
-            <h1 id="displayquestion"></h1>
+            <span id="displayquestion"></span>
 
         </div>
 
@@ -45,7 +45,7 @@
                     <h1>Please choose an option</h1>
 
                     <div class="buttoncontainer">
-                        <button type="button" id="startq" onclick="closeOption()" ></span>Start quiz</button>
+                        <button type="button" id="startq" onclick="closeOption()">Start quiz</button>
                     </div>
 
                 </div>

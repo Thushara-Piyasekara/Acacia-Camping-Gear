@@ -4,8 +4,8 @@ body{
 .navbar {
   background-color: #efe2d0;
   width: 100%;
-  height: 45px;
   transition: top 550ms;
+
 }
 
 .navbar a {
@@ -16,7 +16,7 @@ body{
   font-size: 15px;
   text-decoration: none;
   font-weight: bold;
-  padding: 14px;
+  padding: 32px;
 }
 
 .navbar a:hover {
@@ -28,8 +28,8 @@ body{
   color: #fff;
 }
 #logo{
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .studentinfo {
   position: relative;

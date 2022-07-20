@@ -11,11 +11,11 @@ body{
 .navbar {
     background-color: #efe2d0;
     width: 100%;
-    height: 45px;
     transition: top 550ms;
-  }
-  
-  .navbar a {
+
+}
+
+.navbar a {
     float: left;
     display: block;
     color: #000;
@@ -23,20 +23,20 @@ body{
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-    padding: 14px;
-  }
-  
-  .navbar a:hover {
+    padding: 32px;
+}
+
+.navbar a:hover {
     background-color: #628563;
-  }
-  
-  .navbar a.active {
+}
+
+.navbar a.active {
     background-color: #774040;
     color: #fff;
-  }
+}
   #logo{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
 .mainquizpage{
     background-color: #263f36;

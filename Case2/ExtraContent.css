@@ -33,6 +33,9 @@ body {
     background-color: #774040;
     color: #fff;
 }
+.extraheading{
+    text-align: center;
+}
 h1 {
     color: rgb(73, 120, 73);
 }
