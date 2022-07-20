@@ -48,6 +48,14 @@
     color: #fff;
 }
 
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+
+/* Rest of the page */
+
 .homeTitleBlock {
     white-space: nowrap;
     background-image: url("Images/hometitle.jpg");
@@ -126,9 +134,4 @@
     text-align: center;
     padding-left: 5vh;
     padding-top: 20vh;
-}
-#logo{
-    width: 70px;
-    height: 70px;
-    
 }
