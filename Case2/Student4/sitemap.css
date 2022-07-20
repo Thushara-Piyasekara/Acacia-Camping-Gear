@@ -1,23 +1,15 @@
 body {
-    background-color:orange;/* #f5eee6 */
+    background-color: #f5eee6;
 }
 
 img {
-    width:   80px;
+    width: 80px;
 }
 
 h1 {
     text-align: center;
 }
-/* 
-#topnav {
-    background-color: brown;
-    display: block;
-    color: orange;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-} */
+
 .navbar {
     background-color: #efe2d0;
     width: 100%;
@@ -25,6 +17,7 @@ h1 {
     top: -10px;
     transition: top 550ms;
 }
+
 .navbar a {
     float: left;
     display: block;
@@ -35,114 +28,135 @@ h1 {
     font-weight: bold;
     padding: 32px;
 }
+
 .navbar a:hover {
     background-color: #628563;
 }
+
 .navbar a.active {
     background-color: #774040;
     color: #fff;
 }
 
 /* SVG diagram CSS */
-#line1{
+#line1 {
     stroke: black;
     stroke-width: 1px;
 }
 
-.Title5{
-	
-    padding-top:20px;
-    font-family:'Trebuchet MS', sans-serif;
-    font-size:70px ;
-    color:white;
+.Title5 {
+
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    color: white;
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
 
 }
 
-#diagram{
-    
-	margin-top:0px;
+#diagram {
+
+    margin-top: 0px;
 
 }
 
-#rec1, #rec2, #rec3, #rec4, #rec5, #rec6, #rec7{
-    
-	stroke: white;
+#rec1,
+#rec2,
+#rec3,
+#rec4,
+#rec5,
+#rec6,
+#rec7 {
+
+    stroke: white;
     stroke-width: 5;
     stroke-opacity: 0.7;
-    fill:black;
+    fill: black;
 
 }
 
-#rec1:hover{
-    
-	stroke-opacity: 1.5;
+#rec1:hover {
+
+    stroke-opacity: 1.5;
 
 }
 
-#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7{
-    
-	fill:orangered;
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt6,
+#txt7 {
+
+    fill: orangered;
     font-size: 20px;
     font-weight: 400;
-    font-family:'Trebuchet MS', sans-serif;
-    text-anchor:middle;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-anchor: middle;
 
 }
 
-#txt1:hover{
+#txt1:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt2:hover{
+#txt2:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt3:hover{
+#txt3:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt4:hover{
+#txt4:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt5:hover{
+#txt5:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt6:hover{
+#txt6:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt7:hover{
+#txt7:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8{
+#line1,
+#line2,
+#line3,
+#line4,
+#line5,
+#line6,
+#line7,
+#line8 {
 
-	stroke:black;
-	stroke-width:5;
+    stroke: black;
+    stroke-width: 5;
 
 }
