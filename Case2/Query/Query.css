@@ -11,7 +11,6 @@ body {
 .navbar {
     background-color: #f5eee6;
     width: 100%;
-    transition: 550ms;
 }
 
 .navbar a {
@@ -22,7 +21,7 @@ body {
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-    padding: 14px;
+    padding: 32px;
 }
 
 .navbar a:hover {
