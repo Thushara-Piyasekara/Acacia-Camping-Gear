@@ -16,6 +16,7 @@ body {
     top: -100px;
     transition: top 550ms;
 }
+
 .navbar a {
     float: left;
     display: block;
@@ -26,13 +27,23 @@ body {
     font-weight: bold;
     padding: 32px;
 }
+
 .navbar a:hover {
     background-color: #628563;
 }
+
 .navbar a.active {
     background-color: #774040;
     color: #fff;
 }
+
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+
+
 .extraheading{
     text-align: center;
 }

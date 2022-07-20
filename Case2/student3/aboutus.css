@@ -30,6 +30,7 @@ body{
 #logo{
   width: 70px;
   height: 70px;
+  float: right;
 }
 .studentinfo {
   position: relative;

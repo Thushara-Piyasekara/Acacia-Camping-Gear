@@ -37,6 +37,7 @@ body{
   #logo{
     width: 70px;
     height: 70px;
+    float: right;
   }
 .mainquizpage{
     background-color: #263f36;
