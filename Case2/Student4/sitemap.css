@@ -40,7 +40,7 @@ h1 {
 
 /* SVG diagram CSS */
 #line1 {
-    stroke: black;
+    stroke: #628563;
     stroke-width: 1px;
 }
 
@@ -61,36 +61,36 @@ h1 {
 
 }
 
-#rec1,
-#rec2,
-#rec3,
-#rec4,
-#rec5,
-#rec6,
-#rec7 {
+#rect1,
+#rect2,
+#rect3,
+#rect4,
+#rect5,
+#rect6,
+#rect7 {
 
     stroke: white;
     stroke-width: 5;
     stroke-opacity: 0.7;
-    fill: black;
+    fill: #628563;
 
 }
 
-#rec1:hover {
+#rect1:hover {
 
     stroke-opacity: 1.5;
 
 }
 
-#txt1,
-#txt2,
-#txt3,
-#txt4,
-#txt5,
-#txt6,
-#txt7 {
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7 {
 
-    fill: orangered;
+    fill: #f5eee6;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Trebuchet MS', sans-serif;
@@ -98,49 +98,49 @@ h1 {
 
 }
 
-#txt1:hover {
+#text1:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt2:hover {
+#text2:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt3:hover {
+#text3:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt4:hover {
+#text4:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt5:hover {
+#text5:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt6:hover {
+#text6:hover {
 
     cursor: pointer;
     font-weight: 900;
 
 }
 
-#txt7:hover {
+#text7:hover {
 
     cursor: pointer;
     font-weight: 900;
