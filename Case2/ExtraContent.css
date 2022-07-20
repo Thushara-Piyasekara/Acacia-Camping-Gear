@@ -1,6 +1,4 @@
-* {
-    border: 1px solid rgb(0, 0, 0)
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -9,9 +7,32 @@ html {
 
 body {
     padding: 50px;
-    background-color: rgb(215, 228, 239);
+    background-color: #f5eee6;
 }
-
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    transition: top 550ms;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 32px;
+}
+.navbar a:hover {
+    background-color: #628563;
+}
+.navbar a.active {
+    background-color: #774040;
+    color: #fff;
+}
 h1 {
     color: rgb(73, 120, 73);
 }
@@ -24,7 +45,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+.rulelist{
+    color:#774040 ;
+}
 .rule {
     font-size: 25px;
     color: darkblue;
