@@ -2,7 +2,7 @@ function ArrayMaker(formIn) {
     let nameIn = formIn.name.value;
     let emailIn = formIn.email.value;
     let contactIn = formIn.contact.value;
-    let subjectInOption = formIn.querySubject; //had to use this to get values from dropdown menu
+    let subjectInOption = formIn.querySubject;
     let subjectIn = subjectInOption.options[subjectInOption.selectedIndex].value;
     let detailsIn = formIn.details.value;
 
