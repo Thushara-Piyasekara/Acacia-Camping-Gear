@@ -1,23 +1,29 @@
-body{
+body {
     background-color: #f5eee6;
     padding-top: 30px;
+    font-family: sans-serif;
 }
-.profilepic img{
+
+.profilepic img {
     display: block;
     border-radius: 50%;
 }
-.profilepic{
+
+.profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 19%;
 }
-body{
+
+body {
     text-align: center;
 }
-li{
+
+li {
     list-style: none;
 }
-.pagedev3details{
+
+.pagedev3details {
     font-size: 20px;
 }

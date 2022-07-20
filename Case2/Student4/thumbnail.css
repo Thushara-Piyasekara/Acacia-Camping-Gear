@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f5eee6;
+    background-color: black;
 }
 
 img {
@@ -101,7 +101,7 @@ img {
 }
 
 /* Container for image text */
-.caption-container {
+.caption-contain {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
@@ -130,6 +130,7 @@ img {
     opacity: 1;
 }
 
+
 .nav a:hover {
     background-color: #ddd;
     color: black;
@@ -144,3 +145,7 @@ img {
     font-weight: bold;
     color: orangered;
 }
+
+/* .cursor {
+    width: 20%;
+} */
