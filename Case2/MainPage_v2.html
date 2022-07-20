@@ -9,27 +9,27 @@
         window.onscroll = function () { showNavbar() };
 
         function showNavbar() {
-            if (document.documentElement.scrollTop > 150) {    //We buried the body inside discord
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
                 document.getElementById("navbar").style.top = "0";
             }
             else {
-                document.getElementById("navbar").style.top = "-55px";
+                document.getElementById("navbar").style.top = "-100px";
             }
-        } 
+        }
     </script>
     <title>Acacia Camping Gear - Home Page</title>
 </head>
 
 <body class="homePage">
     <div id="navbar" class="navbar">
+        <img id="logo" src="Images/logo.svg">
         <a class="active" href="#home">HOME</a>
         <a href="#products">PRODUCTS</a>
-        <a href="#query">QUERY</a>
+        <a href="Query/Query.html">QUERY</a>
         <a href="#quiz">QUIZ</a>
         <a href="#sitemap">SITEMAP</a>
-        <a href="#thumbnails">GALLERY</a>
-        <a href="#details">ABOUT US</a>
-        <a href="#more">MORE CONTENT</a>
+        <a href="#thumbnails">THUMBNAILS</a>
+        <a href="#details">STUDENT DETAILS</a>
     </div>
 
     <div class="homeTitleBlock">

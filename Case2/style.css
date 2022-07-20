@@ -24,8 +24,8 @@
     background-color: #efe2d0;
     width: 100%;
     position: fixed;
-    top: -55px;
-    transition: 550ms;
+    top: -100px;
+    transition: top 550ms;
 }
 
 .navbar a {
@@ -36,7 +36,7 @@
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-    padding: 14px;
+    padding: 32px;
 }
 
 .navbar a:hover {
