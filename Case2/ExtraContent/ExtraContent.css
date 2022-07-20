@@ -1,6 +1,8 @@
 * {
     /* border: #000 solid 1px; */
     font-family: sans-serif;
+    text-decoration: none;
+    text-decoration-color: white;
 }
 
 
@@ -11,12 +13,13 @@ html {
 
 body {
     background-color: #f5eee6;
+
 }
 
 .navbar {
-    background-color: #efe2d0;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
+
 }
 
 .navbar a {
@@ -68,11 +71,15 @@ img {
 
 .rulelist {
     color: #774040;
+    font-size: 3vh;
+    padding-left: 30%;
+
 }
 
 .rule {
     font-size: 25px;
     color: darkblue;
+
 }
 
 .extrapara {
@@ -85,18 +92,22 @@ img {
 
 }
 
-a:link {
+
+li a:link {
     text-decoration: none;
+    color: darkblue;
+
 }
 
-a:visited {
+li a:visited {
     text-decoration: none;
+    color: #774040;
 }
 
-a:hover {
+li a:hover {
     text-decoration: underline;
 }
 
-a:active {
+li a:active {
     text-decoration: underline;
 }
