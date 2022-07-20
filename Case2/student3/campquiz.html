@@ -13,6 +13,7 @@
 <body onload="Nextquestion(0)">
 
     <body>
+        <!--Navigation bar-->
         <div id="navbar" class="navbar">
             <img id="logo" src="logo.svg" alt="Image of the logo">
             <a href="../mainPage.html">HOME</a>
@@ -25,6 +26,7 @@
         </div>
         <div class="mainquizpage" id="mainpage">
 
+            <!--Displays quiz-->
             <div class="quizcontainer">
 
                 <div class="quizdetails">
@@ -48,6 +50,7 @@
 
                             <h1>Please choose an option</h1>
 
+                            <!--button to start quiz-->
                             <div class="buttoncontainer">
                                 <button type="button" id="startq" onclick="closeOption()">Start quiz</button>
                             </div>
@@ -56,6 +59,7 @@
 
                     </div>
 
+                    <!--span labels for the 4 different options-->
                     <span>
                         <input type="radio" id="opt-1" name="option" class="radio" value="optA" />
                         <label for="opt-1" class="option" id="opt1label"></label>
@@ -78,6 +82,7 @@
 
                 </div>
 
+                <!--moves on to the next question-->
                 <div class="nextcontainer">
                     <button onclick="handlenextQ()">Next </button>
                 </div>
@@ -86,6 +91,7 @@
 
             <div class="displaycontainer" id="displaycontainer">
 
+                <!--Displays the end result-->
                 <div class="box">
 
                     <h1>Quiz Completed</h1>
@@ -111,9 +117,10 @@
             </div>
 
         </div>
-        <div class="pagedev3">
-            <button onclick="location.href='Hiruni_pageEditor.html';">Page Developer</button>
-        </div>
+        <!--Page developer-->
+        <footer>
+            <a href="Hiruni_pageEditor.html">Page Editor</a>
+        </footer>
         <script src="campquiz.js"></script>
 
     </body>
