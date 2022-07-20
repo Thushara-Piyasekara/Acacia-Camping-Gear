@@ -1,3 +1,8 @@
+* {
+
+    font-family: sans-serif;
+}
+
 body {
     background-color: #f5eee6;
 }
@@ -15,6 +20,20 @@ h1 {
     width: 100%;
     position: fixed;
     top: -10px;
+    transition: top 550ms;
+}
+
+#logo {
+    float: right;
+    height: auto;
+    width: 80px;
+}
+
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: -100px;
     transition: top 550ms;
 }
 
@@ -36,6 +55,13 @@ h1 {
 .navbar a.active {
     background-color: #774040;
     color: #fff;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding: 10px;
 }
 
 /* SVG diagram CSS */

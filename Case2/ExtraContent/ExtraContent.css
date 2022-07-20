@@ -16,10 +16,17 @@ body {
 
 }
 
-.navbar {
-    width: 100%;
-    /* position: fixed; */
+#logo {
+    float: right;
+    height: auto;
+    width: 80px;
+}
 
+.navbar {
+    background-color: #efe2d0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
 }
 
 .navbar a {
@@ -40,13 +47,6 @@ body {
 .navbar a.active {
     background-color: #774040;
     color: #fff;
-}
-
-#logo {
-    width: 70px;
-    height: 70px;
-    float: right;
-    margin-right: 3%;
 }
 
 .contentContainer {
