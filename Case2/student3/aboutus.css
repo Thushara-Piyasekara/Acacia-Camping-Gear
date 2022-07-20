@@ -1,6 +1,11 @@
-body{
+* {
+  border: #000 solid 1px;
+}
+
+body {
   background-color: #f5eee6 !important;
 }
+
 .navbar {
   background-color: #efe2d0;
   width: 100%;
@@ -27,24 +32,28 @@ body{
   background-color: #774040;
   color: #fff;
 }
-#logo{
+
+#logo {
   width: 70px;
   height: 70px;
 }
+
 .studentinfo {
   position: relative;
   width: 50%;
-  flex:25%;
-  padding:25px;
+  flex: 25%;
+  padding: 25px;
 }
-.aboutusmain{
-	display:flex;
+
+.aboutusmain {
+  display: flex;
 
 }
 
 .studentinfo img {
   display: block;
-  width: 350px;;
+  width: 350px;
+  ;
   height: 450px;
 }
 
@@ -57,7 +66,8 @@ body{
   opacity: 0;
   transition: .5s ease;
   background-color: #e5edef;
-  width: 350px;;
+  width: 350px;
+  ;
   height: 450px;
   display: flex;
   align-self: auto;

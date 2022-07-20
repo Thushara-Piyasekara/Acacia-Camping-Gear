@@ -1,3 +1,6 @@
+* {
+    border: #000 solid 1px;
+}
 
 
 html {
@@ -9,6 +12,7 @@ body {
     padding: 50px;
     background-color: #f5eee6;
 }
+
 .navbar {
     background-color: #efe2d0;
     width: 100%;
@@ -44,9 +48,10 @@ body {
 }
 
 
-.extraheading{
+.extraheading {
     text-align: center;
 }
+
 h1 {
     color: rgb(73, 120, 73);
 }
@@ -59,9 +64,11 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-.rulelist{
-    color:#774040 ;
+
+.rulelist {
+    color: #774040;
 }
+
 .rule {
     font-size: 25px;
     color: darkblue;
