@@ -2,35 +2,49 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     font-size: large;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 
 body {
-    background-color: rgb(228, 158, 52);
+    background-color: #f5eee6;
 }
 
-.topNav {
-    float: right;
-    margin-top: 10px;
-    padding-bottom: 10px;
+/* The navbar */
+
+.navbar {
+    background-color: #f5eee6;
+    width: 100%;
+    padding: 1px;
 }
 
-.topNav a {
+.navbar a {
+    float: left;
+    display: block;
     color: #000;
     text-align: center;
     font-size: 15px;
     text-decoration: none;
-    border-radius: 10px;
-    background: #efe2d0;
-    padding: 12px;
-    width: 50px;
-    height: 10px;
+    font-weight: bold;
+    padding: 32px;
 }
 
-.topNav a:hover {
+.navbar a:hover {
     background-color: #628563;
+}
+
+.navbar a.active {
+    background-color: #774040;
     color: #fff;
 }
+
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+
+
+/* Editor Container */
 
 .bigContainer {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img1.jpg");
@@ -41,11 +55,12 @@ body {
 }
 
 .details {
-    font-size: 5vh;
+    font-size: 4vh;
     color: #efe2d0;
     padding: 3%;
     width: 50%;
     float: left;
+    margin-left: 4%;
 
 }
 
@@ -58,6 +73,6 @@ body {
 .editorImage {
     float: right;
     width: 30%;
-    margin: 3%;
     border: 5px solid #efe2d0;
+    margin: 7%;
 }
