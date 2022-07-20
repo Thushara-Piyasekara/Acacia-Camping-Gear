@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f5eee6;
+    background-color: black;
 }
 
 img {
@@ -101,7 +101,7 @@ img {
 }
 
 /* Container for image text */
-.caption-container {
+.caption-contain {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
