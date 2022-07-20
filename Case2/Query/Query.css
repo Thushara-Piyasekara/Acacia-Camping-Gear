@@ -1,0 +1,117 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: #f5eee6;
+}
+
+
+.navbar {
+    background-color: #f5eee6;
+    width: 100%;
+    transition: 550ms;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.navbar a:hover {
+    background-color: #628563;
+}
+
+.navbar a.active {
+    background-color: #774040;
+    color: #fff;
+}
+
+.bigContainer {
+    background-image: url("images/bgImg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#queryForm,
+#summaryView {
+    width: 50%;
+    padding-top: 3%;
+    margin: auto;
+}
+
+
+.SumQuery {
+    padding: 2%;
+}
+
+.fieldsSection {
+    background-color: rgb(239, 226, 208, 0.5);
+    height: 600px;
+    overflow: scroll;
+    border: none;
+}
+
+.buttonSection {
+    background-color: rgb(98, 133, 99, 0.5);
+    border: none;
+}
+
+
+table {
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+
+}
+
+td {
+    text-align: center;
+    padding: 1%;
+}
+
+legend {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+input,
+textarea,
+select {
+    margin-left: 54px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+
+button {
+    background-color: #efe2d0;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #628563;
+    color: #fff;
+}
