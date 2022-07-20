@@ -54,10 +54,10 @@ function EditQuery() {
 function SendQuery(formIn) {
     const validateArr = ArrayMaker(formIn);
     var subject = "Query subject - " + validateArr[3];
-    var body = 'Name :' + validateArr[0] +
-        '%0D%0AE-mail Address :' + validateArr[1] +
+    var body = 'Name : ' + validateArr[0] +
+        '%0D%0AE-mail Address : ' + validateArr[1] +
         '%0D%0AContact Number : ' + validateArr[2] +
-        '%0D%0AQuery Details :' + validateArr[4]
+        '%0D%0AQuery Details : ' + validateArr[4]
 
     window.location.href = "mailto:btgp2001@gmail.com?subject=" + subject + "&body=" + body;
 }
