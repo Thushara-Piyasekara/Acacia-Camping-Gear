@@ -7,6 +7,7 @@ body {
     background-color: #f5eee6;
 }
 
+/* The navbar */
 
 .navbar {
     background-color: #f5eee6;
@@ -33,6 +34,13 @@ body {
     color: #fff;
 }
 
+#logo {
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+
+/* Query and Summary */
 .bigContainer {
     background-image: url("images/bgImg.jpg");
     height: 100vh;
@@ -98,7 +106,7 @@ select {
     background-color: rgb(255, 255, 255);
 }
 
-
+/* buttons */
 button {
     background-color: #efe2d0;
     border: none;
