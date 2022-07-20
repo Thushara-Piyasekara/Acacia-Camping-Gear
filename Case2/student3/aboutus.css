@@ -1,6 +1,6 @@
 body {
   background-color: #f5eee6 !important;
-  
+  font-family: sans-serif;
 }
 
 .navbar {
@@ -89,6 +89,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -97,6 +98,7 @@ footer {
   background-color: #774040;
   width: 100%;
 }
+
 footer a {
   font-weight: bold;
   color: #f5eee6;
@@ -104,6 +106,7 @@ footer a {
   padding: 10px;
   line-height: 2;
 }
+
 footer a:hover {
   background-color: #628563;
   color: #000;
