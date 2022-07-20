@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    height: fit-content;
     font-family: sans-serif;
 
 }
@@ -232,4 +231,20 @@ input[type=radio]:checked ~ .option {
 }
 .quizdetails{
     color: black;
+}
+.pagedev3{
+    background-color: #f5eee6;
+    margin-bottom: -50px;
+
+}
+.pagedev3 button{
+    width: 150px;
+    height: 40px;
+    background-color: #c3c67e;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    border: 2px solid gray;
+    cursor: pointer;
+    outline: none;
+    margin-left: 110px;
 }
