@@ -10,7 +10,6 @@ function ArrayMaker(formIn) {
     return validateArr;
 }
 
-
 function ValidateInputs(formIn) {
     const validateArr = ArrayMaker(formIn);
     const validateArrString = [" Name", " Email", " Contact No", " Query Subject", " Query Details"];
