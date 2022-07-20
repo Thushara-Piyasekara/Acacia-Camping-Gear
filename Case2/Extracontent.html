@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extracontent</title>
     <link rel="stylesheet" href="ExtraContent.css">
+
+    <script>
+        window.onscroll = function() {showNavbar()};
+
+        function showNavbar() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("navbar").style.top = "0";
+            }
+            else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+        }
+    </script>
+    
 </head>
 
 <body>
+
     <h1><b>
             <center> <u> 15 Rules to follow when camping</u></center>
         </b></h1>
@@ -31,7 +46,7 @@
         </nobr>
     </div>
 
-    <div>
+    <div class="rulelist">
         <ol>
             <li><a href="#1"> Respect nature.</a></li>
             <li><a href="#2"> Respect other campers.</a></li>

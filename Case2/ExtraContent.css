@@ -1,6 +1,4 @@
-* {
-    border: 1px solid rgb(0, 0, 0)
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -9,7 +7,7 @@ html {
 
 body {
     padding: 50px;
-    background-color: rgb(215, 228, 239);
+    background-color: #f5eee6;
 }
 
 h1 {
@@ -24,7 +22,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+.rulelist{
+    color:#774040 ;
+}
 .rule {
     font-size: 25px;
     color: darkblue;
