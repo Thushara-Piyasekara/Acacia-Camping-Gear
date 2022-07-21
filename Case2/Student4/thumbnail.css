@@ -33,35 +33,35 @@ img {
 .navbar a.active {
     background-color: #774040;
     color: #fff;
-  }
+}
 
-  .log {
+.log {
     float: right;
-  }
+}
 
-  * {
+* {
     box-sizing: border-box;
 
-  }
+}
 
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
+/* Position the image container (needed to position the left and right arrows) */
+.container {
     position: relative;
-  }
+}
 
-  /* Hide the images by default */
+/* Hide the images by default */
   .mySlides {
     display: none;
-  }
+}
 
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
     cursor: pointer;
-  }
+}
 
-  /* Next & previous buttons */
-  .prev,
-  .next {
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -74,36 +74,36 @@ img {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+}
 
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
-  /* Number text (1/3 etc) */
-  .notext {
+/* Number text (1/3 etc) */
+.notext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
 
-  /* Container for image text */
-  .caption-container {
+/* Container for image text */
+.caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
-  }
+}
 
   .row:after {
     content: "";
@@ -112,55 +112,55 @@ img {
   }
 
   /* Six columns side by side */
-  .colum {
+.colum {
     float: left;
     width: 16.66%;
-  }
+}
 
   /* Add a transparency effect for thumnbail images */
-  .demo {
+.demo {
     opacity: 0.6;
-  }
+}
 
-  .active,
-  .demo:hover {
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}
 
-  .nav a:hover {
+.nav a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
 
-  .nav a.act {
+.nav a.act {
     background-color: black;
     color: orange;
-  }
+}
 
   .place {
     font-weight: bold;
     color: orangered;
     font-size: large;
-  }
+}
 
-  footer {
+footer {
     display: flex;
     justify-content: center;
     height: 50px;
     background-color: #774040;
     margin-top: 400px;
     width: 100%;
-  }
+}
 
-  footer a {
+footer a {
     font-weight: bold;
     color: #f5eee6;
     text-decoration: none;
     padding: 10px;
     line-height: 2;
-  }
+}
 
-  footer a:hover {
+footer a:hover {
     background-color: #628563;
     color: #000;
-  }
+}
