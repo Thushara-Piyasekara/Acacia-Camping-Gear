@@ -105,19 +105,19 @@ img {
     color: white;
 }
 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  /* Six columns side by side */
+/* Six columns side by side */
 .colum {
     float: left;
     width: 16.66%;
 }
 
-  /* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.6;
 }
