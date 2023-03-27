@@ -1,5 +1,5 @@
 # Acacia Camping Gear
-A camping gear website developed with **HTML**, **CSS** and **JavaScript** by a group of 5 students.
+A camping gear website developed with **HTML**, **CSS** and **JavaScript** by a group of 4 students.
 
 ## Description
 The website represents an online store that specializes in selling camping gear. It offers a wide range of products, including tents, sleeping bags, backpacks, and cooking equipment. The website also features a query form that allows customers to contact the store with any questions or concerns they may have. In addition, the website has a camping quiz that helps customers and tests their knowledge of camping.The website also has a page dedicated to general rules and guidelines for camping, including tips on how to minimize impact on the environment, how to safely handle campfires, and how to properly dispose of waste. The website also has a photo gallery that showcases images of customers using the camping gear in outdoor settings.
